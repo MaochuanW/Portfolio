@@ -1,11 +1,8 @@
-/* styles.css */
-
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
 
     background-image: url('https://pbs.twimg.com/media/EJSZ8C6XkAIpXpj?format=jpg&name=large');
@@ -16,13 +13,6 @@ body {
     /* Add a semi-transparent black overlay */
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
-
-    /* Other existing styles */
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
 }
 
 header {
@@ -37,8 +27,6 @@ nav {
     display: flex;
     justify-content: center;
 }
-
-
 
 nav ul {
     list-style-type: none;
@@ -87,9 +75,10 @@ main {
     padding: 2rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #1b262c;
-    font-size: 2.5rem
+    font-size: 2.5rem;
 }
 
 section {
@@ -173,19 +162,13 @@ a:hover i {
 
 h3 {
     color: #27c64c;
-    font-size: 2.0rem
+    font-size: 2.0rem;
 }
 
-#project-list li a {
-    font-size: 1.4rem; 
-}
-
-#project-list2 li a {
-    font-size: 1.4rem; 
-}
-
+#project-list li a,
+#project-list2 li a,
 #project-list3 li a {
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
 }
 
 form {
@@ -203,7 +186,9 @@ form label {
     margin-bottom: 0.5rem;
 }
 
-form input[type="text"], form input[type="email"], form textarea {
+form input[type="text"],
+form input[type="email"],
+form textarea {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
@@ -258,28 +243,13 @@ form br {
     border-radius: 4px;
 }
 
-.project-1-link {
-    color: #1a8cff;
-}
-
-.project-2-link {
-    color: #1a8cff; 
-}
-
-.project-3-link {
-    color: #1a8cff;
-}
-
-.project-4-link {
-    color: #1a8cff; 
-}
-
-.project-5-link {
-    color: #1a8cff;
-}
-
+.project-1-link,
+.project-2-link,
+.project-3-link,
+.project-4-link,
+.project-5-link,
 .project-6-link {
-    color: #1a8cff; 
+    color: #1a8cff;
 }
 
 .project-categories {
