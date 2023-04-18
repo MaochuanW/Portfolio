@@ -105,3 +105,12 @@ iframe {
     height: 800px;
     border: none;
 }
+
+a i {
+    margin-right: 5px;
+    color: #1b262c;
+}
+
+a:hover i {
+    color: #0f4c75;
+}
