@@ -41,6 +41,7 @@ main {
 
 h1, h2 {
     color: #1b262c;
+    font-size: 2.5rem
 }
 
 section {
@@ -113,4 +114,28 @@ a i {
 
 a:hover i {
     color: #0f4c75;
+}
+
+.highlight {
+    background-color: #3c8dbc;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+h3 {
+    color: #760b0b;
+    font-size: 2.0rem
+}
+
+#project-list li a {
+    font-size: 1.4rem; 
+}
+
+#project-list2 li a {
+    font-size: 1.4rem; 
+}
+
+#project-list3 li a {
+    font-size: 1.4rem; 
 }
