@@ -226,3 +226,19 @@ form br {
 #contact-me-heading {
     text-align: center;
 }
+
+.map-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.leaflet-map {
+    width: 200%;
+    max-width: 500px;
+    height: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
