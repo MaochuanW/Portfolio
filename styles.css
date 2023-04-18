@@ -139,3 +139,58 @@ h3 {
 #project-list3 li a {
     font-size: 1.4rem; 
 }
+
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="submit"] {
+    display: block;
+    background-color: #3c8dbc;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1b262c;
+}
+
+form br {
+    display: none;
+}
+
+#contact-me-heading {
+    text-align: center;
+}
