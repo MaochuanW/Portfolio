@@ -285,7 +285,7 @@ form br {
 .project-categories {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 6rem;
     justify-content: center;
 }
 
@@ -299,8 +299,8 @@ form br {
 
 .projects {
     display: grid;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .project {
