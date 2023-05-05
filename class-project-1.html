@@ -12,22 +12,152 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#introduction">Introduction</a></li>
-                <li><a href="index.html#gis-projects">GIS Projects</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="gis-projects.html#gis-projects">GIS Projects</a></li>
+                <li><a href="skills.html#skills">Skills</a></li>
                 <li><a href="contact.html">Contact Me!</a></li>
-
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h1>Class Project 1</h1>
-            <iframe src="https://umn.maps.arcgis.com/home/webmap/viewer.html?useExisting=1&layers=a47e8e43e05441beaa1c1ec2a673b997"></iframe>
-        </section>
+            <h1>Population Change and Residential land-use zoning changes in Detroit (1950-2010)</h1>
+            <style>
+                .maps-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .map-container {
+                    width: 50%;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .embed-container {
+                    position: relative; 
+                    padding-bottom: 80%; 
+                    height: 0; 
+                    max-width: 100%;
+                } 
+                .embed-container iframe, .embed-container object, .embed-container iframe{
+                    position: absolute; 
+                    top: 0; 
+                    left: 0; 
+                    width: 100%; 
+                    height: 100%;
+                } 
+                small{
+                    position: absolute; 
+                    z-index: 40; 
+                    bottom: 0; 
+                    margin-bottom: -15px;
+                }
+                .map-container h4 {
+                    text-align: center;
+                }
+                img {
+                    max-width: 50%;
+                    height: auto;
+                }
+
+            </style>
+            <div class="maps-wrapper">
+                <div class="map-container">
+                    <h4>2010 Zoning</h4>
+                    <div class="embed-container">
+                        <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="2010 Zoning" src="//umn.maps.arcgis.com/apps/Embed/index.html?webmap=af22614985154bc6a3e628d1225e78ed&extent=-83.3634,42.2413,-82.8374,42.4651&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&basemap_gallery=true&disable_scroll=true&theme=light"></iframe>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <h4>1950 Zoning</h4>
+                    <div class="embed-container">
+                        <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="1950_zoning" src="//umn.maps.arcgis.com/apps/Embed/index.html?webmap=24b8ccbce27e46f28d0fa55e276a9ec6&extent=-83.3635,42.2414,-82.8376,42.4652&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&details=true&legend=true&active_panel=details&basemap_gallery=true&disable_scroll=true&theme=light"></iframe>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <p>
+                    Problem:
+                    Detroit, MI, has experienced uniquely extreme economic and demographic changes over the past
+                    half a century. Deindustrialization of the city as a result of automobile manufacturing decline
+                    was a prime factor in the changes that the city experienced throughout the 20th century. In 1950,
+                    the population of Detroit was nearly two million, while it barely exceeded 700,000 in 2010.
+                </p>
+                <p>
+                    So What:
+                    Detroit was an intriguing city to study for this project in terms of its population and land-use
+                    change. While previous studies have looked at land-use change within the city, including the
+                    fluctuation of vegetation (Ryznar 2007, Merry et al. 2014), our motivation for this study was to
+                    better understand how the residential zoning changed from 1950 ordinances to 2010. The drastic
+                    change in population size Detroit has experienced may have led to a variety of changes in the
+                    distribution of land uses.
+                </p>
+                <p>
+                    Solution:
+                    We sought to analyze the spatial distribution of Detroit's overall population in the years 1950 and
+                    2010, and compare current land use zoning ordinances with those that existed in 1950. Zoning, a
+                    land use regulation tool that helps us better organize our built environment, is a metric of
+                    land-use change that we decided to investigate. A zoning ordinance delineates what kinds of
+                    activities are acceptable on a specific plot of land, the density at which those activities can be
+                    performed, the height of buildings allowed to be built, and the spatial characteristics of the lot.
+                    Zoning ordinances are enforceable regulations. However, the nature of zoning may change
+                    depending on a variety of factors, such as population size and density. Our group aims to depict a
+                    possible correlation between population density and the spatial composition of residential zoning
+                    areas in Detroit between 1950 and 2010.
+                </p>
+                <P>
+                    Benefits:
+                    From our analysis, we were able to affirm that the population in Detroit decreased across the city
+                    between 1950 and 2010. We also found that some areas of Detroit that were classified as
+                    residential zones in 1950 had changed to be non-residential zones by the year 2010. We found
+                    that this transformation was most commonly found along major transportation corridors. By
+                    identifying the overall changes in population size within the city of Detroit, we can compare the
+                    degree of change in residential land use zoning to that of population size. These analyses may aid
+                    in our understanding of the practical use of zoning, and how change in policy may help to
+                    identify issues of vacancy and abandonment in residential zones.
+                </P>
+                <P>Conclusion:
+                    While we were able to deduce some findings from our analysis, there were certainly limitations
+                    in regard to what we were able to uncover. Due to the fact that the size and shape of census tracts
+                    changed from 1950 to 2010, we were unable to figure out the precise difference in population by
+                    tract in Detroit from 1950 to 2010. A way to work around this in future work may be to
+                    consolidate the population of smaller tracts and then compare this population with the larger
+                    tracts that they overlap with based on the year, although this still would not be exact.
+                    Additionally, because we had to georeference the 1950 zoning map, the mapping isn't perfectly
+                    aligned with the basemap. Lastly, we were unable to adequately capture whether or not the
+                    zoning change from 1950 to 2010 was statistically significant, which is something that could be
+                    researched further.
+                </P>
+                
+            
+            </section>
+            <section>
+                <figure>    
+                    <figure style="margin-right: 20px;">
+                    <img src="1950-zoning-map.jpg" alt="1950 Zoning Map of Detroit">
+                    <figcaption>1950 Zoning Map of Detroit</figcaption>
+                </figure>
+                <figure style="margin-right: 20px;">
+                    <img src="1950-population.png" alt="1950 population Map of Detroit" style="width: 100%; height: auto;">
+                    <figcaption>This map shows population by graduated symbols. There was a large population in Detroit in the 1950s in both residential areas and downtown.</figcaption>
+                </figure>
+                <figure style="margin-left: 20px;">
+                    <img src="2010-population.png" alt="2010 population Map of Detroit" style="width: 100%; height: auto;">
+                    <figcaption>This map shows population by graduated symbols. Since 1950 the population of Detroit has drastically decreased. Most of the decrease happened in residential areas, which can be seen if compared to the “1950 Tract Population” map.</figcaption>
+                </figure>
+                <figure>
+                    <figure style="margin-right: 20px;">
+                    <img src="landuse-change.png" alt="Landuse Change Map of Detroit" style="width: 100%; height: auto;">
+                    <figcaption>Most of the residential to non-residential change (red) happened along transportation corridors.</figcaption>
+                </figure>
+                <figure>
+                    <figure style="margin-right: 20px;">
+                    <img src="Residential-NORes.png" alt="Residential to Non-residentialLanduse Change Map of Detroit" style="width: 100%; height: auto;">
+                    <figcaption>This map shows the top 3 types of residential to non-residential land use change from 1950-2010. The largest change was from residential to general business district. This mostly happens along the transportation corridor as seen in the previous “Land Use Change (1950-2010)” map.</figcaption>
+                </figure>
+            </section>
+            
     </main>
     <footer>
         <p>&copy; Maochuan Wang - All Rights Reserved</p>
     </footer>
     <script src="scripts.js"></script>
-</body>
-</html>
+    

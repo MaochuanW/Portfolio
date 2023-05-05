@@ -12,20 +12,27 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#introduction">Introduction</a></li>
-                <li><a href="index.html#gis-projects">GIS Projects</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="gis-projects.html#gis-projects">GIS Projects</a></li>
+                <li><a href="skills.html#skills">Skills</a></li>
                 <li><a href="contact.html">Contact Me!</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h1>Hawaii!</h1>
+            <h1>How proximity to volcano hazards affects housing value, income, and demographic distribution of people in Hawaii.</h1>
             <div class="map-container">
                 <iframe src="leaflet_map.html" class="leaflet-map" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <iframe src="leaflet_map1.html" class="leaflet-map" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <iframe src="leaflet_map2.html" class="leaflet-map" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
+        </section>
+        <section>
+            <p>This project is an example of how geospatial data analysis can provide insights into relationships between different socio-economic and demographic factors in a region. The project focuses on the island of Hawaii, also known as the Big Island, and explores the relationships between lava hazard, house value, median income, and demographic data. The project utilizes several shapefiles, including Lava Hazard, House Value, Median Income, and Race, which are read using the geopandas library. The data are then cleaned and manipulated to remove unnecessary columns and rename columns to match the desired column names.</p>
+            <p>The project begins by exploring the House Value shapefile and identifying the top 25% of houses in Hawaii. This is done by plotting a boxplot of the house values and then using the quantile function to find the precise value of the top 25%. The rich blocks are then plotted on a map using the plot function and also using the explore function to display the median house value of each block.</p>
+            <p>The project then explores the relationship between lava hazard and house value by overlaying the Lava Hazard and House Value shapefiles using the overlay function. The resulting map shows the severity of lava hazard and the median house value in each block. This visualization can provide insights into how the two factors are related and whether certain areas with high house values are also at higher risk of lava hazard.</p>
+            <p>The project then moves on to exploring the relationship between median income and lava hazard. The top 30% income earners in Hawaii are identified by plotting a boxplot of the median income and using the quantile function to find the precise value of the top 30%. The rich blocks are then plotted on a map using the plot function and also using the explore function to display the median income of each block. The Lava Hazard and Median Income shapefiles are then overlaid using the overlay function to visualize the relationship between the two factors.</p>
+            <p>Finally, the project explores the relationship between demographic data and lava hazard. The Race shapefile is used to extract demographic data, which is then cleaned and manipulated to calculate the percentage of people of color in each block. The resulting data is plotted on a map using the explore function, and the lava hazard and demographic layers are overlaid using the overlay function to visualize the relationship between the two factors.</p>
         </section>
     </main>
     <footer>
