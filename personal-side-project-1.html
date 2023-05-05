@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Project 1</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .responsive-image {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+
+    }
+
+    .image-container {
+    text-align: center;
+    }
+
+    .image-container img {
+    max-width: 80%;
+    }
+
+    .scroll-down-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+
+    
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#introduction">Introduction</a></li>
+                <li><a href="gis-projects.html#gis-projects">GIS Projects</a></li>
+                <li><a href="skills.html#skills">Skills</a></li>
+                <li><a href="contact.html">Contact Me!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="scroll-down">
+            <h1>Blender Relief Map</h1>
+            <p>To create an extremely detailed relief map, I use Blender and Polar Geospatial Center's EarthDEM and REMA models, following Daniel Huffman's tutorial on his website. First, I download the required data from the Polar Geospatial Center's website, including the EarthDEM and REMA models, which provide high-resolution elevation and terrain information. Next, I import the data into Blender and use the software to create a 3D model of the terrain. This involves manipulating the data to adjust the color and texture of the terrain, as well as adding features such as rivers and roads. Finally, I use Blender to render the model and create a final image of the relief map. By using these tools and following Huffman's tutorial, I am able to create an extremely detailed and accurate relief map, suitable for use in a variety of GIS applications.</p>
+            <div class="image-container">
+                <h2>Crane Glacier 3D Model</h2>
+                <img src="Glacier.png" alt="Crane Glacier 3D Model">
+                <h2>Rockie Mountains 3D Model</h2>
+                <img src="Mountains.png" alt="Mountains 3D Model">
+              </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Maochuan Wang - All Rights Reserved</p>
+    </footer>
+    <script src="scripts.js"></script>
+
+    <a href="#scroll-down" class="scroll-down-link">
+        <img src="scrollv3.png" alt="Scroll Down">
+      </a>
+      
+</body>
+</html>
