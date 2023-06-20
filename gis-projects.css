@@ -419,3 +419,9 @@ hr {
     height: auto;
     margin-left: 150px; /* Adjust as needed */
 }
+#small-image1 {
+    max-width: 500px; /* Adjust as needed */
+    max-height: 500px; /* Adjust as needed */
+    height: auto;
+    margin-left: 150px; /* Adjust as needed */
+}
