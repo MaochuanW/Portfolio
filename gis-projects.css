@@ -352,7 +352,7 @@ form br {
 }
 hr {
     border: none;
-    height: 1px;
+    height: 1.5px;
     background-color: #000;
 }
 .text {
@@ -425,3 +425,33 @@ hr {
     height: auto;
     margin-left: 150px; /* Adjust as needed */
 }
+
+.text-and-image {
+    display: flex;
+    align-items: center; /* Center the content vertically */
+    justify-content: space-between; /* Add space between text and image */
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%; /* Adjust the width as needed */
+    min-width: 500px;
+    opacity: 0.9;
+    align-items: flex-start;
+}
+
+.image-container {
+    width: 50%; /* Adjust the width as needed */
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+}
+
+.image-container img {
+    max-width: 100%; /* Adjust the width as needed */
+    max-height: 800px; /* Adjust the height as needed */
+    height: auto;
+    border-radius: 15px;
+}
+
