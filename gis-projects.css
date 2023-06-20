@@ -4,17 +4,13 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-
-    display:flex;
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
-
     background-image: url('https://pbs.twimg.com/media/EJSZ8C6XkAIpXpj?format=jpg&name=large');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
-    /* Add a semi-transparent black overlay */
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
 }
@@ -77,7 +73,7 @@ nav ul li a:hover::before {
 
 main {
     padding: 2rem;
-    flex-grow:1;
+    flex-grow: 1;
 }
 
 h1,
@@ -307,6 +303,7 @@ form br {
 .centered {
     text-align: center;
 }
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -341,4 +338,84 @@ form br {
     background-color: white;
     text-align: center;
     font-size: 20px;
+    margin-bottom: 0.1rem; /* Adjust the margin-bottom value as needed */
+}
+
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: rgb(254, 254, 254);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #000;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    min-width: 300px;
+    opacity: 0.9;
+    align-items: flex-start; 
+}
+
+
+.titles {
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from titles */
+    font-size: 140%
   }
+  
+  .titles a {
+    text-decoration: none; /* Remove underline from anchor tags within titles */
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .siteLink {
+    text-decoration: underline; /* Add underline to siteLink */
+    margin-bottom: 2rem;
+  }
+  
+  .siteLink a {
+    font-weight: normal; /* Remove bold from anchor tags within siteLink */
+    font-size: 70%
+  }
+
+  
+  .image-container img {
+    max-width: 800px; /* Adjust the width as needed */
+    max-height: 800px; /* Adjust the height as needed */
+    height: auto;
+    border-radius: 15px;
+  }
+  .text-and-image {
+    display: flex;
+    align-items: start;
+    flex-wrap: nowrap; /* Prevent flex items from wrapping */
+}
+.kindskills {
+    display: flex;
+    justify-content: space-around; /* This will space your spans evenly across the container */
+    margin-top: 2rem; /* Adjust this to add space above the kindskills div */
+}
+
+.kindskills span {
+    margin: 0 1rem; /* This will add some space between the spans */
+    padding: 0.5rem; /* This adds some space around the text inside the spans */
+}
+
+#small-image {
+    max-width: 400px; /* Adjust as needed */
+    max-height: 400px; /* Adjust as needed */
+    height: auto;
+    margin-left: 150px; /* Adjust as needed */
+}
