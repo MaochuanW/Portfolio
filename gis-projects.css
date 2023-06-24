@@ -338,7 +338,7 @@ form br {
     background-color: white;
     text-align: center;
     font-size: 25px;
-    margin-bottom: 0.1rem; /* Adjust the margin-bottom value as needed */
+    margin-bottom: -1rem; /* Adjust the margin-bottom value as needed */
 }
 
 
