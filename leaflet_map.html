@@ -154,8 +154,8 @@
     let div = L.DomUtil.create('div');
     
     let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
-    let fields = ["YEAR", "STATE", "COUNTY", "Median_Income"];
-    let aliases = ["YEAR", "STATE", "COUNTY", "Median_Income"];
+    let fields = ["YEAR", "STATE", "COUNTY", "Median Income"];
+    let aliases = ["YEAR", "STATE", "COUNTY", "Median Income"];
     let table = '<table>' +
         String(
         fields.map(
