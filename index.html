@@ -7,6 +7,7 @@
     <title>GIS Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
 
@@ -23,33 +24,71 @@
     </header>
 
     <main>
-        <section id="introduction" class="container">
-            <h1>Welcome! I'm Maochuan. A Geospatial Enthusiast.</h1>
+       
+            <section id="welcome-section" class="welcome-section">
+            <div class="container grid">
+                <div class="column-1">
+                    <h1 class="title" data-title="Hello!">My Name is Maochuan Wang.</h1>
 
-            <div class="intro-content">
-                <div class="centered">
-                    <img src="profile-picture.jpg" alt="Profile Picture" id="profile-picture">
-                    <div class="icon-container">
-                        <a href="https://github.com/MaochuanW" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github" style="font-size: 1.5rem;"></i>
+                    <div class="section-description">
+                        <span class="line"></span>
+                        <p class="text">Welcome to my GIS portfolio, a blend of spatial analysis, cartography, and geospatial development. With a rich background across various sectors, I transform complex geospatial data into practical, impactful solutions. Browse, engage, or collaborate as we explore the power and potential of GIS together.</p>
+                    </div>    
+
+                    <div class="welcome-btns">
+                        <a href="contact.html" class="btn">
+                            Let's Talk
+                            <i class="uil uil-message welcome-icon"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/maochuan-wang-988745160/" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin" style="font-size: 1.5rem;"></i>
+
+                        <a href="gis-projects.html" class="portfolio-btn">
+                            Portfolio
+                            <i class="uil uil-angle-double-right welcome-arrow"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="column-2">
+                    <h4 class="title-sm">"The application of GIS <br> is limited only by <br> the imagination <br> of those who use it"</h4>
+                    <p class="citation">- Jack Dangermond</p> <!-- Add this line -->
+                    <div class="column-2-info">
+                        <h6 class="btn-title">Learn About Me</h6>
+                        <a href="skills.html" class="column-2-btn">
+                            <i class="uil uil-play"></i>
                         </a>
                     </div>
                 </div>
-                <div class="intro-text">
-                    <p>Welcome to my Portfolio! A showcase of expertise and passion for Geographic Information Systems (GIS). This website offers a concise overview of diverse projects spanning <span class="highlight">spatial analysis</span>, <span class="highlight">cartography</span>, and <span class="highlight">geospatial development</span>, demonstrating the ability to convert complex geospatial data into compelling visuals and practical solutions.</p>
-                    <p>As a proficient GIS professional, I have applied my skills across various sectors, including environmental conservation, urban planning, and more. This portfolio exhibits the value of GIS in decision-making processes and addressing contemporary challenges.</p>
-                    <p>Feel free to contact me for inquiries about my work, potential collaborations, or discussions surrounding the remarkable world of GIS. Let's unlock the power of GIS together and make a positive impact on our world.</p>
+                
+
+                <div class="socials">
+                    <p class="text">Check Out My</p>
+                    <a href="https://www.linkedin.com/in/maochuanwang" class="social-btn" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://https://github.com/MaochuanW" class="social-btn" target="_blank">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1IYoaezveOkG6rdcfa3EQPZVOlQaJeHrh/view?usp=sharing" class="social-btn" target="_blank">
+                        <i class="uil uil-file"></i>
+                    </a>
+        
                 </div>
+
+                <div class="side-line">
+                    <h4 class="text">Scroll Down</h4>
+                    <span class="section-line"></span>
+                    <span class="section-line2"></span>
+                </div>
+            </div>
                
+
                 <div class="interactive-map">
                     <iframe src="https://experience.arcgis.com/experience/bec64b4c9eee40babbd8097a74d5b38b/"></iframe>
                 </div>
 
             </div>
-            <p>Check out my <a href="https://drive.google.com/file/d/1IYoaezveOkG6rdcfa3EQPZVOlQaJeHrh/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i>resume</a> to learn more about my experience and qualifications.</p>
+            <p>Check out my <a href="https://drive.google.com/file/d/1IYoaezveOkG6rdcfa3EQPZVOlQaJeHrh/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i><span class="highlight">resume</span></a> to learn more about my experience and qualifications.</p>
         </section>
 
     </main>

@@ -162,8 +162,9 @@ a:hover i {
 
 
 h3 {
-    color: #27c64c;
+    color: #000000;
     font-size: 2.0rem;
+    width: 30rem;
 }
 
 
@@ -299,13 +300,16 @@ form br {
     line-height: 1.3;
     position: relative;
     margin-bottom: 2rem;
+    margin-top: 3rem;
+    right:-30px;
+    top: 10px;
 }
 
 .title::before {
     content: attr(data-title);
     position: absolute;
     top: -17px;
-    left: 0px;
+    left: -40px;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 1.2px;
@@ -348,18 +352,7 @@ body{
     grid-template-columns: repeat(2,1fr);
     padding-top: 3rem;
 }
-.container {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0rem 1rem;
-    position: relative;
-}
-*, *::before, *::after {
-    
-    padding: 0;
-   
-}
+
 .side-line {
     position: absolute;
     display: flex;
@@ -522,4 +515,178 @@ a {
     }
     
     
+    * {
+        box-sizing: border-box;
+    }
     
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--body-color);
+    }
+    
+    :root {
+        --body-color: #fcfbfa;
+        --main-color: #FCDA69;
+        --btn-color: #73d0ef;
+        --btn-color-alt: #7f68f1;
+        --title-color: #18171C;
+        --text-color: #8d8d92;
+    }
+    
+    .wrapper {
+        width: 100%;
+        min-width: 590px;
+        left: 500%;
+        top: 50%;
+    }
+    
+    .container {
+        width: 75%;
+        padding: 30px;
+        background-color: white;
+        border: 2px solid rgba(255, 255, 255, 0.06);
+        border-radius: 10px;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        margin-bottom: 30px;
+        margin: 30px auto;
+        
+        padding: 0rem 1rem;
+    }
+    
+    .container * {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+    }
+    
+    h2 {
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 33px;
+        font-weight: bold;
+    }
+    
+    .attributes-list h2 {
+        font-size: 24px;
+        color: #0a7aca;
+    }
+    
+    .red-text {
+        color: red;
+    }
+    
+    .green-text {
+        color: green;
+    }
+    
+    .clifton-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    
+    .emergenetics-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .harmony-color {
+        color: #FF5733;
+    }
+    
+    .responsibility-color {
+        color: #33FF57;
+    }
+    
+    .empathy-color {
+        color: #5733FF;
+    }
+    
+    .consistency-color {
+        color: #FF33F6;
+    }
+    
+    .activator-color {
+        color: #0e90f9;
+    }
+    
+    .top-strengths {
+        font-size: 24px;
+        border-bottom: 2px solid black;
+        display: inline-block;
+        padding-bottom: 0.1px;
+    }
+    
+    .skills-section {
+        position: relative;
+        padding-top: 2rem;
+        max-width: 100%;
+        min-height: 840px;
+        margin-bottom: 0;
+    }
+    
+    .skills-title .title {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    
+    .skills-details .details-title {
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+        text-align: left;
+    }
+    
+    .skills-info {
+        display: flex;
+        column-gap: 1.5rem;
+        line-height: 1;
+        width: 480px;
+        border-top: 1.5px solid black;
+        padding: 0.9rem 0 2rem;
+    }
+    .skills-info .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+
+    .skills-info h5 {
+        font-size: .75rem;
+        font-weight: 500;
+        width: 6rem;
+    }
+    .skill-content-title {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    
+    .skills-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1.5rem;
+        column-gap: 0rem;
+    }
+    
+    .skill-card .skill-button {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        background-color: var(--title-color);
+        border-radius: 50%;
+        font-size: 2.8rem;
+        color: var(--body-color);
+    }
+    
+    .skill-button .skill-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
