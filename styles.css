@@ -332,7 +332,6 @@ body{
     grid-template-columns: 3fr 2fr;
     align-items: center;
     justify-content: center;
-    height: 70vh;
 }
 
 .welcome-section .container {
